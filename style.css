@@ -1,0 +1,263 @@
+
+html {
+    font-family: "Segoe UI","Roboto",sans-serif;
+  }
+  
+  body {
+   margin: 0;
+  
+  }
+  
+  img {
+   width: 100%;
+  }
+  
+  nav {
+  
+    background-color:#180e0b;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding-left: 34px;
+    padding-right: 34px;
+    color: #fff;
+    height: 89px;
+  }
+  
+  h1,ul {
+    margin: 0;
+  }
+  
+  h1 {
+    font-size: 34px;
+    font-size: calc(20pt + (34 -20) *((100vw - 320px) /(1920 - 320)));
+  }
+  
+  h2 {
+  font-weight: 700; /*bold*/
+  font-size: 34px;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul li + li {
+    margin-left: 21px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav button {
+    background-color: white;
+    border-width: 0;
+    padding: 0;
+    
+  }
+  
+  nav button svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .Active {
+    background-color: blue;
+    padding: 13px;
+    border-radius: 5px;
+  }
+  
+  header img { 
+    height: 80vh  ;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  
+  section .primeira img { 
+    width: 200px; 
+    height: 200px;}
+  
+  .mb {
+    padding-right: 20px;
+    padding-left: 20px;
+  }  
+  
+  
+  section {
+    padding: 70px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .segunda {
+    background-color: #3f2923 ;
+    color:#da7557;
+  }
+  
+  .esquerda, .direita {
+    flex-basis: 50%;
+    /* width: 50% */
+  }
+  
+  .esquerda {
+    display:flex;
+  }
+  
+  .esqueda article {
+    margin-top: 21px;
+    display: flex;
+  }
+  
+  .esquerda article img {
+    width: 89px;
+    height: 89px;
+  }
+  
+  
+  p {
+    line-height: 1.61;
+    font-size: 15px;
+  }
+  
+  .segunda .esquerda p {
+    margin-left: 13px;
+  
+  }
+  
+  section .direita img { 
+    width: 560px; 
+    height: 330px;}
+  
+  .esquerda div:last-of-type{
+    margin-left: 32px;
+  }
+  
+  .terceira {
+    background-color: #2c1b15;
+    color:#cf816a
+  }
+  
+  .terceira .t-esquerda a {
+    color: #da7557 
+  }
+  
+  .t-esquerda {
+    flex-basis: 75%;
+    padding-right: 89px;
+  }
+  
+  
+  .t-direita {
+    flex-basis: 25%;
+  }
+  
+  .t-direita ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+        
+  .t-direita ul li + li {
+    margin-top: 21px;
+  } 
+  
+  
+  .t-direita a {
+    text-decoration: underline;
+    color: inherit ;
+  }
+                                                      
+    footer {
+            padding: 24px 59px;
+            background-color: #180e0b;
+            color: #8c5240; 
+            text-align: center;
+    }
+            
+    footer p {
+      margin: 0;
+      font-size: 12px;
+    }
+    
+  
+  @media (max-width:1023px){
+    h1 {
+        font-size: 20pt;
+      }
+    
+    
+    nav ul {
+        display: none;
+      }
+    
+  
+    header img {
+      height: 134vh;
+    }
+  
+    section {
+      padding:36px;
+    }
+  
+    .primeira article {
+      width: 45%;
+    }
+  
+    .primeira article .mb{
+      margin-bottom: 34px;
+    }
+  
+  
+    .primeira article h2 {
+    font-size: 13px;
+    font-weight: bold;
+    }
+  
+    .primeira article p{
+    font-size: 10pt;
+    line-height: 16.1pt;
+    }
+  
+    section, .esquerda {
+      flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+  
+    .esquerda, .direita,
+    .t-esquerda, .t-direita {
+      flex-basis: 100%;
+    }
+  
+    .esquerda div:last-of-type {
+      margin-left: 0;
+    }
+  
+    .t-esquerda{
+      padding-right: 0;
+    }
+  
+    .esquerda article p {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    .esquerda article img {
+      width: 69px;
+      height: 69px;
+    }
+  }
+  
+  
+    @media (min-width:1024px) {
+      nav button {
+        display: none;
+      }
+    }
